@@ -1,0 +1,54 @@
+# Template only. Install in r4ndom4is/arcade after explicit release authorization.
+name: Publish approved Arcade runtime
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: arcade-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.repository == 'r4ndom4is/arcade'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage only approved runtime files
+        shell: python
+        run: |
+          from pathlib import Path
+          import shutil
+          root = Path(".")
+          output = Path("_site")
+          exact = {"index.html", "trumpet/index.html", "manifest.webmanifest", "sw.js"}
+          for required in exact:
+              path = root / required
+              if not path.is_file() or path.is_symlink():
+                  raise RuntimeError(f"Missing approved runtime file: {required}")
+          selected = [root / name for name in sorted(exact)]
+          assets = root / "assets"
+          if not assets.is_dir() or assets.is_symlink():
+              raise RuntimeError("Missing runtime asset directory")
+          for path in assets.rglob("*"):
+              if path.is_symlink():
+                  raise RuntimeError(f"Symlinks are not release assets: {path}")
+              if path.is_file():
+                  if path.suffix not in {".js", ".css", ".png", ".webp", ".svg"}:
+                      raise RuntimeError(f"Unapproved runtime asset: {path}")
+                  selected.append(path)
+          for path in selected:
+              destination = output / path
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(path, destination)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy explicitly selected runtime
+        id: deployment
+        uses: actions/deploy-pages@v4
