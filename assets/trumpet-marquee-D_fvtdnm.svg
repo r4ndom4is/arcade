@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="184" viewBox="0 0 1200 184" role="img" aria-labelledby="title description">
+  <title id="title">trumpet flight. — pocket arcade</title>
+  <desc id="description">The canonical four-square pocket arcade mark and lowercase trumpet flight. lettering share a matte grey ground with rising blue-grey suit-like curves, a narrow crimson tie seam and open negative space.</desc>
+  <!--
+    THESIS: Flight expressed through the fluid suit-and-tie abstraction of references
+    83/84, not through a new portrait, literal instrument or decorative badge.
+    OWN-WORLD: Continuous muted grey ground; blue-grey and stone curves, restrained
+    crimson seam; exact canonical crimson/sand four-square mark.
+    STORY: Read the game, then follow the broad rising curve into open negative space.
+    FIRST VIEWPORT: Quiet mark and lettering on the left; abstract form on the right.
+    FORM: Brief-pinned thin 1200:184 band. Original vector paths, no remote assets.
+  -->
+  <defs>
+    <g id="t"><path d="M16 7V64Q16 77 30 72M3 27H32"/></g>
+    <g id="r"><path d="M7 75V28M7 44Q15 24 34 29"/></g>
+    <g id="u"><path d="M7 27V57Q7 75 23 75Q41 75 41 56V27M41 57V75"/></g>
+    <g id="m"><path d="M7 75V28M7 43Q7 27 22 27Q37 27 37 43V75M37 43Q37 27 52 27Q67 27 67 43V75"/></g>
+    <g id="p"><path d="M7 96V28M7 51C7 18 43 18 43 51S7 84 7 51Z"/></g>
+    <g id="e"><path d="M7 49H42C42 20 7 19 7 51C7 75 28 83 43 67"/></g>
+    <g id="f"><path d="M12 75V21Q12 1 33 7M1 28H31"/></g>
+    <g id="l"><path d="M8 3V75"/></g>
+    <g id="i"><path d="M8 28V75"/><path d="M8 7V14"/></g>
+    <g id="g"><path d="M43 28V73Q43 100 10 92M43 51C43 19 7 19 7 51S43 84 43 51Z"/></g>
+    <g id="h"><path d="M7 3V75M7 45Q7 27 24 27Q41 27 41 45V75"/></g>
+  </defs>
+
+  <path fill="#c7c7c0" d="M0 0H1200V184H0Z"/>
+
+  <!-- Exact 93-unit squares, 24-unit gutters, 210-unit canonical mark. -->
+  <g transform="translate(48 59) scale(.3142857143)">
+    <path fill="#942b39" d="M0 0h93v93H0zM117 0h93v93h-93zM0 117h93v93H0z"/>
+    <path fill="#c6b99d" d="M117 117h93v93h-93z"/>
+  </g>
+
+  <!-- Original outlined lowercase lettering; platform-independent and offline. -->
+  <g transform="translate(147 57) scale(.64)" fill="none" stroke="#26312e" stroke-width="10" stroke-linejoin="round">
+    <use href="#t"/>
+    <use href="#r" x="40"/>
+    <use href="#u" x="79"/>
+    <use href="#m" x="133"/>
+    <use href="#p" x="211"/>
+    <use href="#e" x="266"/>
+    <use href="#t" x="318"/>
+    <use href="#f" x="379"/>
+    <use href="#l" x="418"/>
+    <use href="#i" x="443"/>
+    <use href="#g" x="468"/>
+    <use href="#h" x="525"/>
+    <use href="#t" x="578"/>
+    <path stroke-width="12" d="M626 63V75"/>
+  </g>
+
+  <!-- The broad outer curve and its open centre carry reference 83's motion.
+       Suit-grey fields and the narrow red seam carry reference 84's palette. -->
+  <path fill="#4c6261" d="M651 184C762 136 794 58 864 -5C940 -73 1062 -79 1200 -43V33C1091 -5 997 1 927 49C853 101 837 151 735 184Z"/>
+  <path fill="#6c7775" d="M711 184C810 143 839 71 916 19C993 -34 1092 -31 1200 5V70C1095 29 1018 40 953 88C883 140 858 168 816 184Z"/>
+  <path fill="#969086" d="M804 184C878 150 908 101 967 57C1034 7 1121 18 1200 48V112C1110 76 1050 74 992 112C942 145 915 172 882 184Z"/>
+  <path fill="#942b39" d="M804 184C878 150 908 101 967 57C1034 7 1121 18 1200 48V57C1118 26 1041 22 976 66C916 108 889 157 824 184Z"/>
+  <path fill="#c7c7c0" d="M882 184C943 155 981 105 1044 86C1093 72 1141 79 1200 97V184Z"/>
+</svg>
