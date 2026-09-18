@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>
-    (() => {
-      const param = new URLSearchParams(window.location.search).get("scoutTheme");
-      const theme = param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.setAttribute("data-theme", theme);
-    })();
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f7f4ef">
-  <meta name="description" content="Arcade. Small games, one more try. An independent development build.">
-  <title>Arcade</title>
-  <script type="module" crossorigin src="/arcade/assets/main-DpsdAhNl.js"></script>
-  <link rel="stylesheet" crossorigin href="/arcade/assets/main-DAvJsq65.css">
-  <link rel="manifest" href="/arcade/manifest.webmanifest">
+  <meta name="description" content="Arcade. Coming soon.">
+  <title>Arcade</title>
+  <script type="module" crossorigin src="/arcade/assets/arcade-DiDOYpQZ.js"></script>
+  <link rel="modulepreload" crossorigin href="/arcade/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/arcade/assets/arcade-BSoXJDdH.css">
+  <link rel="icon" type="image/svg+xml" href="/arcade/assets/arcade-icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/arcade/assets/arcade-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/arcade/assets/arcade-apple-touch-icon.png">
 </head>
 <body>
-  <div id="app"></div>
-  <noscript>Arcade needs JavaScript to load a game.</noscript>
+  <main class="coming-soon">
+    <div class="waiting-cabinet">
+      <div class="waiting-art" role="img" aria-label="Pocket Arcade">
+        <picture class="waiting-shadow">
+          <source media="(prefers-color-scheme: dark)" srcset="/arcade/assets/shadow-dark-aB2F7Msk.webp">
+          <img src="/arcade/assets/shadow-light-ZUWlxGOM.webp" width="900" height="1280" alt="" draggable="false">
+        </picture>
+        <picture class="waiting-body">
+          <source media="(prefers-color-scheme: dark)" srcset="/arcade/assets/cabinet-base-dark-Bxq8NzbB.webp">
+          <img src="/arcade/assets/cabinet-base-light-DnJK-zqc.webp" width="1800" height="2560" alt="" draggable="false">
+        </picture>
+        <picture class="marquee-light">
+          <source media="(prefers-color-scheme: dark)" srcset="/arcade/assets/marquee-light-dark-CuZDlpDF.webp">
+          <img src="/arcade/assets/marquee-light-light-CysByGuy.webp" width="1800" height="2560" alt="" draggable="false">
+        </picture>
+      </div>
+    </div>
+    <h1 class="coming-soon-title">Coming soon</h1>
+    <p class="art-error" role="status" hidden>Cabinet artwork could not load. Reload to try again.</p>
+  </main>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2=".3" y2="1">
+      <stop stop-color="#ffe69b"/>
+      <stop offset=".45" stop-color="#efbd52"/>
+      <stop offset="1" stop-color="#ba791f"/>
+    </linearGradient>
+    <linearGradient id="bell" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#5b391b"/>
+      <stop offset=".65" stop-color="#ad752b"/>
+      <stop offset="1" stop-color="#e6b550"/>
+    </linearGradient>
+  </defs>
+  <path fill="#f7f4ef" d="M0 0h512v512H0z"/>
+  <g id="rider-mark" transform="translate(-51.2 -51.2) scale(1.2)">
+    <!-- Fresh vector silhouette: swept hair, navy suit and the game's golden ride. -->
+    <g stroke="#27323b" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+      <path fill="#293d57" d="M225 259c-20 13-33 38-32 66l-23 36 37 18 45-46 16-38z"/>
+      <path fill="#182b40" d="m239 317 34 33-2 35 31 5 10-50-40-50z"/>
+      <path fill="#223449" d="m168 356-14 14c-9 11-2 20 12 20h39l6-14z"/>
+      <path fill="#223449" d="m272 377-5 13c-2 9 4 14 13 14h38c8 0 10-9 2-13l-20-11z"/>
+      <path fill="#334e70" d="M221 222c-30 11-42 44-43 66l31 24 61-2 24-50-32-34z"/>
+      <path fill="#edf1eb" stroke-width="4" d="m235 229 16 54 17-49z"/>
+      <path fill="#b84336" stroke="none" d="m247 240 8-5 8 10-7 9 6 30-11 13-8-14 8-29z"/>
+      <path fill="#426184" stroke-width="4" d="m220 228 8 42 14-8 6 25-1-47zm48 5-9 51 20-21-8-4 11-14z"/>
+      <path fill="#3e5b7d" d="M216 260c-7 15-12 31-8 39l47 15 11-19-33-14"/>
+      <path fill="#eeb68a" stroke-width="5" d="m254 296 14 1 8-5c7-2 13 8 7 13l-7 5c-1 11-12 13-24 5z"/>
+      <path fill="#d79366" stroke-width="5" d="m232 210 1 20 19 12 17-16-7-24z"/>
+      <path fill="#f0b78a" d="M210 134c-13 17-18 47-7 69l20 25 30 7 23-13 8-20 16-8-10-11-1-27-25-28z"/>
+      <path fill="#d99566" stroke="none" d="m272 155 10 27-7 19-16 6 9 9-17 14-22-4 23 9 24-13 8-20 16-8-10-11-1-27z"/>
+      <path fill="#f4c39a" stroke-width="4" d="M210 179c-15-8-20 2-15 13 3 8 9 10 18 7"/>
+      <path fill="#e8b749" d="M198 180c-5-13-6-28 0-38l-12-2 17-15-9-7c20-18 43-21 72-13 13 4 30 8 47 5l-12 15 9 1c-15 18-33 24-48 17l-15-7-22 17-6 28-7 5-6-13z"/>
+      <path fill="#ffe39a" stroke="none" d="M205 132c18-23 48-22 71-14l-13-8c-23-7-47 0-58 22zm9 13 23-19 29 12c15 7 29 3 36-8-20 4-34-5-47-9-17-5-30 5-41 24z"/>
+      <path fill="none" stroke="#aa772b" stroke-width="4" d="M207 157c8-26 21-38 43-32m-39 15c8-12 25-23 39-19"/>
+      <path fill="none" stroke-width="5" d="m248 163 18 3"/>
+      <path fill="#27323b" stroke="none" d="M255 168h7v9h-7z"/>
+      <path fill="none" stroke="#a76544" stroke-width="4" d="m246 199 20 3-10 5"/>
+    </g>
+    <g transform="rotate(-12 268 326)" stroke="#86591f" stroke-linejoin="round">
+      <path fill="none" stroke="#86591f" stroke-width="19" d="M198 332v21c0 30 64 30 64-1v-13"/>
+      <path fill="none" stroke="#e8b752" stroke-width="10" d="M198 332v21c0 30 64 30 64-1v-13"/>
+      <path fill="url(#brass)" stroke-width="6" d="M157 311h129c33 0 55-11 82-37v85c-25-24-51-31-82-31H157z"/>
+      <path fill="#ffe49a" stroke="none" d="M167 314h130c18 0 38-9 53-19-12 15-38 26-61 26H167z"/>
+      <path fill="#cba45f" stroke-width="5" d="M150 307h17v24h-17z"/>
+      <path fill="#d7e1df" stroke="#63737b" stroke-width="5" d="M125 313h25v12h-25zm-6-5h9v22h-9z"/>
+      <path fill="#ecc462" stroke-width="5" d="M213 305v-17h11v17m9 0v-21h11v21m9 0v-17h11v17"/>
+      <path fill="none" stroke="#ffe6a2" stroke-width="5" stroke-linecap="round" d="M210 286h17m3-4h17m3 4h17"/>
+      <ellipse cx="372" cy="316" rx="23" ry="49" fill="url(#brass)" stroke-width="6"/>
+      <ellipse cx="375" cy="316" rx="13" ry="37" fill="url(#bell)" stroke-width="3"/>
+      <path fill="none" stroke="#fff0bb" stroke-width="4" stroke-linecap="round" d="M370 275c-8 11-12 26-12 41"/>
+    </g>
+  </g>
+</svg>
