@@ -25,22 +25,23 @@ jobs:
           import shutil
           root = Path(".")
           output = Path("_site")
-          exact = {"index.html", "trumpet/index.html", "manifest.webmanifest", "sw.js"}
+          exact = {"index.html", "trumpet/index.html", "ninjacat/index.html", "manifest.webmanifest", "sw.js"}
           for required in exact:
               path = root / required
               if not path.is_file() or path.is_symlink():
                   raise RuntimeError(f"Missing approved runtime file: {required}")
           selected = [root / name for name in sorted(exact)]
-          assets = root / "assets"
-          if not assets.is_dir() or assets.is_symlink():
-              raise RuntimeError("Missing runtime asset directory")
-          for path in assets.rglob("*"):
-              if path.is_symlink():
-                  raise RuntimeError(f"Symlinks are not release assets: {path}")
-              if path.is_file():
-                  if path.suffix not in {".js", ".css", ".png", ".webp", ".svg"}:
-                      raise RuntimeError(f"Unapproved runtime asset: {path}")
-                  selected.append(path)
+          for asset_directory in ("assets", "ninjacat/assets"):
+              assets = root / asset_directory
+              if not assets.is_dir() or assets.is_symlink():
+                  raise RuntimeError(f"Missing runtime asset directory: {assets}")
+              for path in assets.rglob("*"):
+                  if path.is_symlink():
+                      raise RuntimeError(f"Symlinks are not release assets: {path}")
+                  if path.is_file():
+                      if path.suffix not in {".js", ".css", ".png", ".webp", ".svg"}:
+                          raise RuntimeError(f"Unapproved runtime asset: {path}")
+                      selected.append(path)
           for path in selected:
               destination = output / path
               destination.parent.mkdir(parents=True, exist_ok=True)

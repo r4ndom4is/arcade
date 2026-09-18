@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 184">
+  <rect width="1200" height="184" rx="22" fill="#29253e"/>
+  <path d="M70 136V50l32 23 32-23v86M1066 136V50l32 23 32-23v86" fill="none" stroke="#dda05e" stroke-width="8" stroke-linejoin="round"/>
+  <text x="600" y="126" text-anchor="middle" fill="#fff0d9" font-family="Trebuchet MS, sans-serif" font-size="112" font-weight="900" letter-spacing="8">NINJA CAT</text>
+  <path d="M365 150h470" stroke="#c74958" stroke-width="8" stroke-linecap="round"/>
+</svg>
