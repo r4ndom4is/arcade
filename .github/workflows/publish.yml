@@ -25,7 +25,8 @@ jobs:
           import shutil
           root = Path(".")
           output = Path("_site")
-          exact = {"index.html", "trumpet/index.html", "ninjacat/index.html", "manifest.webmanifest", "sw.js"}
+          exact = {"index.html", "trumpet/index.html", "ninjacat/index.html", "manifest.webmanifest", "sw.js",
+                   "ninjacat/manifest.webmanifest", "ninjacat/sw.js"}
           for required in exact:
               path = root / required
               if not path.is_file() or path.is_symlink():

@@ -1,0 +1,14 @@
+{
+  "id": "/arcade/ninjacat/",
+  "name": "Ninja Cat: Skybound",
+  "short_name": "Skybound",
+  "start_url": "/arcade/ninjacat/",
+  "scope": "/arcade/ninjacat/",
+  "display": "standalone",
+  "background_color": "#29253e",
+  "theme_color": "#29253e",
+  "icons": [
+    { "src": "assets/skybound-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/skybound-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
