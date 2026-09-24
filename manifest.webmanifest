@@ -3,7 +3,7 @@
   "name": "Trumpet Flight",
   "short_name": "Trumpet",
   "start_url": "/arcade/trumpet/",
-  "scope": "/arcade/",
+  "scope": "/arcade/trumpet/",
   "display": "standalone",
   "background_color": "#f7f4ef",
   "theme_color": "#f7f4ef",
